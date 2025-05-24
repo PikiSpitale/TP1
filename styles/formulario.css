@@ -1,5 +1,40 @@
 @import url("./globals.css");
 
-h3{
-    background-color: var(--t-color);
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: var(--p-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: var(--q-color) 2px solid;
+}
+
+button {
+  margin-top: 10px;
+}
+
+label {
+  color: var(--t-color);
+  font-size: 20px;
+}
+
+.formTerms > label > a {
+  text-decoration: none;
+  color: rgb(100, 100, 214);
+  text-decoration: underline;
+}
+
+.formContainer {
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    width: auto;
+    height: auto;
+  }
 }

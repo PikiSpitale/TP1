@@ -1,15 +1,54 @@
 @import url("./globals.css");
 
-.questionTableHeader > th {
-  color: white;
-  font-size: 24px;
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.mainContainer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.questionDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   padding: 10px;
 }
 
-.questionTableContent > td {
-  color: white;
-  font-size: 18px;
-  border: var(--q-color) 2px solid;
+.whoDivContainer {
+  border: 2px solid var(--q-color);
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px;
+}
+
+.whatDivContainer {
+  border: 2px solid var(--q-color);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.visionDivContainer {
+  border: 2px solid var(--q-color);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.servicesDivContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--q-color);
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .questionDiv {
+    flex-direction: column;
+  }
 }

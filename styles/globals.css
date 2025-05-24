@@ -9,12 +9,9 @@
 .mainContainer {
   background-color: var(--s-color);
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 body {
@@ -24,21 +21,40 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-nav > ul {
-  list-style: none;
+.headerContainer {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  border: var(--q-color) 2px solid;
+  justify-content: space-between;
 }
 
-a {
+.headerContainer > div > img {
+  margin-left: 10px;
+}
+
+.divLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: var(--p-color);
   text-decoration: dashed;
   color: var(--t-color);
   border: #537a5a 2px solid;
   padding: 10px;
   border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--t-color);
+}
+
+.footerContainer {
+  padding: 10px;
 }
 
 .footerContainer > ul {
@@ -52,4 +68,29 @@ a {
 
 .footerContainer > ul > li {
   margin: 0 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainContainer {
+    height: auto;
+    width: auto;
+    padding: 10px;
+  }
+
+  .headerContainer > div > img {
+    margin: 0;
+  }
+  .divLinks {
+    margin-right: 0;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .footerContainer {
+    padding: 10px;
+  }
 }
