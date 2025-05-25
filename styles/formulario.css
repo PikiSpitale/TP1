@@ -15,6 +15,7 @@ h1 {
 /*#endregion*/
 /*#region ESTILOS*/
 input {
+  width: 250px;
   background-color: var(--p-color);
   padding: 10px;
   margin: 10px;
@@ -37,7 +38,9 @@ label {
   color: rgb(100, 100, 214);
   text-decoration: underline;
 }
-
+.formTerms > input {
+  width: auto;
+}
 .formContainer {
   padding: 10px;
 }
