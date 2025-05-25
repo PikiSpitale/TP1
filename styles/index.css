@@ -42,19 +42,7 @@ p {
   font-size: 18px;
 }
 
-.whoDivContainer {
-  border: 2px solid var(--q-color);
-  border-radius: 10px;
-  padding: 8px;
-}
-
-.whatDivContainer {
-  border: 2px solid var(--q-color);
-  border-radius: 10px;
-  padding: 8px;
-}
-
-.visionDivContainer {
+.divQuestionTop {
   border: 2px solid var(--q-color);
   border-radius: 10px;
   padding: 8px;
@@ -62,7 +50,7 @@ p {
 
 /* #endregion */
 /*#region MEDIAQUERY RESPONSIVE*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1400px) {
   .main {
     height: auto;
   }
