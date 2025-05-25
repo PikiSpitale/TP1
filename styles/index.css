@@ -62,7 +62,10 @@ p {
 
 /* #endregion */
 /*#region MEDIAQUERY RESPONSIVE*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+  .main {
+    height: auto;
+  }
   .questionDiv {
     flex-direction: column;
   }

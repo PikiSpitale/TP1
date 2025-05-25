@@ -2,6 +2,8 @@
 
 /*#region ACOMODAR LOS ELEMENTOS EN COLUMNA Y EL TITULO EN EL CENTRO*/
 .main {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +49,7 @@ label {
 /*#endregion*/
 /*#region MEDIAQUERY RESPONSIVE*/
 @media screen and (max-width: 600px) {
-  .mainContainer {
+  .main {
     width: auto;
     height: auto;
   }
