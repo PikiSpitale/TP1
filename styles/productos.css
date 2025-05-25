@@ -1,5 +1,90 @@
 @import url("./globals.css");
-
-h3{
-    background-color: var(--f-color);
+/*#region ACOMODAR LOS ELEMENTOS*/
+.main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
+
+.mainTitle {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+/* #endregion */
+/*#region ESTILOS A LAS CARTAS*/
+.productCard {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.buyButton {
+  cursor: pointer;
+}
+/* #endregion */
+/* #region ESTILO DE LA BARRA DE BUSQUEDA */
+
+.searchBar input {
+  appearance: none;
+  width: 250px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 2px solid var(--q-color);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  outline: none;
+  margin-right: 8px;
+  background-color: var(--q-color-light);
+}
+
+.searchBar input:focus {
+  border-color: var(--q-color-dark);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+.searchBar input::placeholder {
+  color: white;
+}
+.searchBar button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.searchBar img {
+  width: 16px;
+  height: 16px;
+}
+/* #endregion */

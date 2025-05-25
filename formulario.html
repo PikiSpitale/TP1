@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/formulario.css" />
   </head>
   <body>
+    <!-- #region HEADER-->
     <header class="header">
       <nav class="headerContainer">
         <div><img src="./img/logo.png" alt="pageLogo" /></div>
@@ -25,73 +26,74 @@
         </div>
       </nav>
     </header>
+    <!-- #endregion -->
+    <!-- #region MAIN-->
     <main class="main">
-      <div class="mainContainer">
-        <h1>Formulario de Registro</h1>
-        <div class="formContainer">
-          <form action="/submit" method="POST">
-            <div class="formName">
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="formLastName">
-              <label for="lastName">Apellido:</label>
-              <input type="text" id="lastName" name="lastName" required />
-            </div>
-            <div class="formEmail">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="formRepeatEmail">
-              <label for="repeatEmail">Repetir Email:</label>
-              <input
-                type="email"
-                id="repeatEmail"
-                name="repeatEmail"
-                required
-              />
-            </div>
-            <div class="formPassword">
-              <label for="password">Contraseña:</label>
-              <input type="password" id="password" name="password" required />
-            </div>
-            <div class="formRepeatPassword">
-              <label for="repeatPassword">Repetir Contraseña:</label>
-              <input
-                type="password"
-                id="repeatPassword"
-                name="repeatPassword"
-                required
-              />
-            </div>
-            <div class="formDocument">
-              <label for="document">Tipo de documento:</label>
-              <select name="document" id="document">
-                <option value="dni">DNI</option>
-                <option value="pasaporte">Pasaporte</option>
-              </select>
-            </div>
-            <div class="DocumentNumber">
-              <label for="document">Documento:</label>
-              <input
-                type="text"
-                id="documentNumber"
-                name="documentNumber"
-                required
-              />
-            </div>
-            <div class="formTerms">
-              <label for="terminos"
-                >Acepto los <a href="">Terminos y Condiciones</a> de la
-                pagina</label
-              >
-              <input type="checkbox" id="terminos" name="terminos" required />
-            </div>
-            <button type="submit">Registrar</button>
-          </form>
-        </div>
-      </div>
+      <!-- #region TITULO-->
+      <h1>Formulario de Registro</h1>
+      <!-- #endregion -->
+      <!-- #region FORMULARIO-->
+      <section class="formContainer">
+        <form action="/submit" method="POST">
+          <div class="formName">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="formLastName">
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="formEmail">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="formRepeatEmail">
+            <label for="repeatEmail">Repetir Email:</label>
+            <input type="email" id="repeatEmail" name="repeatEmail" required />
+          </div>
+          <div class="formPassword">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="formRepeatPassword">
+            <label for="repeatPassword">Repetir Contraseña:</label>
+            <input
+              type="password"
+              id="repeatPassword"
+              name="repeatPassword"
+              required
+            />
+          </div>
+          <div class="formDocument">
+            <label for="document">Tipo de documento:</label>
+            <select name="document" id="document" required>
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+            </select>
+          </div>
+          <div class="DocumentNumber">
+            <label for="document">Documento:</label>
+            <input
+              type="text"
+              id="documentNumber"
+              name="documentNumber"
+              required
+            />
+          </div>
+          <div class="formTerms">
+            <label for="terminos"
+              >Acepto los <a href="">Terminos y Condiciones</a> de la
+              pagina</label
+            >
+            <input type="checkbox" id="terminos" name="terminos" required />
+          </div>
+          <button type="submit">Registrar</button>
+        </form>
+      </section>
+      <!-- #endregion -->
     </main>
+    <!-- #endregion -->
+    <!-- #region FOOTER-->
     <footer class="footer">
       <div class="footerContainer">
         <ul>
@@ -102,5 +104,6 @@
         </ul>
       </div>
     </footer>
+    <!-- #endregion -->
   </body>
 </html>

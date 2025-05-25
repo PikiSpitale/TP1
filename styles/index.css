@@ -1,5 +1,12 @@
 @import url("./globals.css");
 
+/*#region ACOMODAR LOS ELEMENTOS Y ESTILOS AL BLOQUE DE ABAJO*/
+.main {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 h1 {
   padding: 10px;
   text-align: center;
@@ -7,18 +14,32 @@ h1 {
 
 h3 {
   text-align: center;
+  text-decoration: underline;
 }
 
-.mainContainer {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .questionDiv {
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding: 10px;
+}
+
+.servicesDivContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--q-color);
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* #endregion */
+/*#region ESTILOS A LOS DEMAS BLOQUES*/
+p {
+  text-align: center;
+  font-size: 18px;
 }
 
 .whoDivContainer {
@@ -39,16 +60,11 @@ h3 {
   padding: 8px;
 }
 
-.servicesDivContainer {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid var(--q-color);
-  border-radius: 10px;
-  padding: 8px;
-  margin-top: 10px;
-}
+/* #endregion */
+/*#region MEDIAQUERY RESPONSIVE*/
 @media screen and (max-width: 600px) {
   .questionDiv {
     flex-direction: column;
   }
 }
+/* #endregion */

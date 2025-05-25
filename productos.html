@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/productos.css" />
   </head>
   <body>
+    <!-- #region HEADER-->
     <header class="header">
       <nav class="headerContainer">
         <div><img src="./img/logo.png" alt="pageLogo" /></div>
@@ -25,9 +26,66 @@
         </div>
       </nav>
     </header>
+    <!-- #endregion -->
+    <!-- #region MAIN-->
     <main class="main">
-      <div class="mainContainer"></div>
+      <!-- #region SEARCH BAR-->
+        <section class="searchBar">
+          <input type="text" placeholder="Buscar productos..." />
+            <button type="submit">
+              <img src="./img/lupa.png" alt="Search" width="24" height="24"/>
+            </button>
+        </section>
+        <!-- #endregion -->
+        <!-- #region TITULO-->
+        <section class="mainTitle">
+          <h1>PRODUCTOS</h1>
+        </section>
+        <!-- #endregion -->
+          <!-- #region PRODUCTOS -->
+        <section class="productsContainer">
+            <div class="productCard">
+              <img
+                src="./img/product1.jpg"
+                alt="product1"
+                width="150"
+                height="150"
+              />
+              <h2>Ryzen 9 9950X3D</h2>
+              <h4>La mejor CPU de computadora de escritorio de 16 núcleos con tecnología AMD 3D V-Cache™ de 2.ª generación que puede hacerlo todo con un rendimiento increíble para los jugadores y creadores más exigentes.</h4>
+              <h3 class="price">$999</h3>
+              <button class="buyButton">Comprar</button>
+            </div>
+            <div class="productCard">
+              <img
+                src="./img/product2.jpg"
+                alt="product2"
+                width="150"
+                height="150"
+              />
+              <h2>GEFORCE RTX 5090 32GB ASUS</h2>
+              <h4>La placa de video ASUS TUF Gaming GeForce RTX 5090 32GB GDDR7 OC es una tarjeta gráfica de alta gama diseñada para jugadores y creadores de contenido exigentes</h4>
+              <h3 class="price">$4299</h3>
+              <button class="buyButton">Comprar</button>
+            </div>
+            <div class="productCard">
+              <img
+                src="./img/product3.jpg"
+                alt="product3"
+                width="150"
+                height="150"
+              />
+              <h2>Logitech G PRO X Superlight 2</h2>
+              <h4>La siguiente evolución del mouse ganador de campeonatos. Presentamos la nueva arma elegida por los principales deportistas mundiales de esports.</h4>
+              <h3 class="price">$599.99</h3>
+              <button class="buyButton">Comprar</button>
+            </div>
+          </section>
+          <!-- #endregion -->
+        </div>
     </main>
+    <!-- #endregion -->
+    <!-- #region FOOTER-->
     <footer class="footer">
       <div class="footerContainer">
         <ul>
@@ -38,5 +96,6 @@
         </ul>
       </div>
     </footer>
+    <!-- #endregion -->
   </body>
 </html>

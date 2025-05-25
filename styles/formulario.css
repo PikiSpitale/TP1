@@ -1,10 +1,19 @@
 @import url("./globals.css");
 
-.mainContainer {
+/*#region ACOMODAR LOS ELEMENTOS EN COLUMNA Y EL TITULO EN EL CENTRO*/
+.main {
   display: flex;
   flex-direction: column;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+/*#endregion*/
+/*#region ESTILOS*/
 input {
   background-color: var(--p-color);
   padding: 10px;
@@ -15,10 +24,11 @@ input {
 
 button {
   margin-top: 10px;
+  cursor: pointer;
 }
 
 label {
-  color: var(--t-color);
+  color: var(--q-color);
   font-size: 20px;
 }
 
@@ -31,10 +41,12 @@ label {
 .formContainer {
   padding: 10px;
 }
-
+/*#endregion*/
+/*#region MEDIAQUERY RESPONSIVE*/
 @media screen and (max-width: 600px) {
   .mainContainer {
     width: auto;
     height: auto;
   }
 }
+/*#endregion*/
